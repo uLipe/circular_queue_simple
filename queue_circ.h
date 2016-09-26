@@ -56,7 +56,7 @@ int queue_empty(queue_circ_t *q);
           .slots_number = noof_slots,                         \
           .wr_ptr = 0,                                        \
           .rd_ptr = 0,                                        \
-          .slot_len = slot_size                               \
+          .slot_len = slot_size + sizeof(int)                 \
         }
 
 #endif
